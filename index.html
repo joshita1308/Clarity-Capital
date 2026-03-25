@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cheat Sheet | Desi Adulting 101</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">THE CHEAT SHEET 🇮🇳</div>
+        <ul class="nav-links">
+            <li><a href="#lessons">Lessons</a></li>
+            <li><a href="#calculator">SIP Calc</a></li>
+            <li><a href="#jargon">Jargon Buster</a></li>
+        </ul>
+    </nav>
+        <javascript>
+            async function getInvestmentValue() {
+                const response = await fetch('http://localhost:8080/api/v1/calculate-sip?monthlyInvestment=2000&years=10');
+                const finalAmount = await response.json();
+                console.log("Your wealth after 10 years: ₹" + finalAmount.toFixed(2));
+            }
+        </javascript>
+    <header>
+        <h1>Master your money before your <span>first salary hit.</span></h1>
+        <p>Decoding ITR, SIPs, and 1BHK leases for the next generation of Indian hustlers.</p>
+        <button class="main-btn">Get the Checklist</button>
+    </header>
+
+    <section id="lessons" class="container">
+        <h2 class="section-title">The Desi Adulting Kit</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="tag blue">Tax & Law</div>
+                <h3>ITR & GST Basics</h3>
+                <p>What is a PAN card? How does TDS work on your first internship stipend?</p>
+                <a href="#" class="read-more">View Lesson →</a>
+            </div>
+            <div class="card">
+                <div class="tag green">Housing</div>
+                <h3>1BHK Survival Guide</h3>
+                <p>Security deposits (the Bangalore struggle), rent agreements, and brokerage hacks.</p>
+                <a href="#" class="read-more">View Lesson →</a>
+            </div>
+            <div class="card">
+                <div class="tag purple">Investing</div>
+                <h3>The Power of SIPs</h3>
+                <p>Move past FD/Gold. How to start investing ₹500/month in Index Funds.</p>
+                <a href="#" class="read-more">View Lesson →</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculator" class="container">
+        <div class="calc-container">
+            <h2 class="section-title">The "Wealth Gap" Calculator</h2>
+            <p>If you invest <strong>₹2,000/month</strong> for 10 years, here is the difference:</p>
+            <div class="results">
+                <div class="res-box">
+                    <h4>Bank FD (6%)</h4>
+                    <p class="amt">₹3.27 Lakhs</p>
+                    <small>Safe, but slow.</small>
+                </div>
+                <div class="res-box highlight">
+                    <h4>Index SIP (12%)</h4>
+                    <p class="amt">₹4.64 Lakhs</p>
+                    <small>The Wealth Creator 🚀</small>
+                </div>
+            </div>
+            <p class="disclaimer">*Assuming historical average returns. Market risks apply!</p>
+        </div>
+    </section>
+
+    <section id="jargon" class="container">
+        <h2 class="section-title">The Jargon Buster</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Boring Term</th>
+                        <th>What it actually means</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Liquidity</strong></td>
+                        <td>How fast you can turn an investment back into cash for a Goa trip.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Diversification</strong></td>
+                        <td>Not putting all your "eggs" (money) into just one crypto or one stock.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Inflation</strong></td>
+                        <td>Why a plate of Momos cost ₹40 today but will cost ₹100 when you're 30.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>TDS</strong></td>
+                        <td>The government taking their "cut" before you even see your salary.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 The Cheat Sheet | Built for the next 100M Indian Investors</p>
+    </footer>
+    
+</body>
+</html>
+
